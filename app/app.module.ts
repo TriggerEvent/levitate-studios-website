@@ -20,7 +20,9 @@ import { JobsComponent } from './pageComponents/jobs/jobs.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'contact', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'news', component: AboutComponent },
   { path: 'jobs', component: JobsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
