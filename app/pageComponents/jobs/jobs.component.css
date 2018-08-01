@@ -1,0 +1,138 @@
+
+#jobsBG{
+    width:100%;
+    height:auto;
+    background-color:#262626;
+}
+
+#jobsCont{
+    margin:0 auto;
+    width:1366px;
+    height:auto;
+}
+
+#studio{
+    width:1366px;
+    height:600px;
+    background: #4d4e51; /* Old browsers */
+    background: -moz-linear-gradient(180deg, #333436 24%, #2f3032 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #333436 24%,#2f3032 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(180deg, #333436 24%,#2f3032 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454647', endColorstr='#2f3032',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jobs{
+    margin-top:-20px;
+    width:1366px;
+    height:400px;
+    background: #4d4e51; /* Old browsers */
+    background: -moz-linear-gradient(180deg, #333436 24%, #2f3032 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #333436 24%,#2f3032 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(180deg, #333436 24%,#2f3032 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454647', endColorstr='#2f3032',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#studioIconCont{
+    width:100%;
+    height:auto;
+    text-align:center;
+    padding-top:40px;
+    margin-bottom:50px;
+}
+
+#studioIcon{
+    width:200px;
+    height:200px;
+}
+
+.studioHeaderText{
+    margin-left:60px;
+    font-weight:600;
+    color:white;
+}
+
+.studioText{
+    margin-left:60px;
+    color:white;
+}
+
+#jobsHeader{
+   
+    font-size:15px;
+    height:50px;
+}
+
+#jobsHeaderText{
+    padding-left:60px;
+    padding-top:14px;
+}
+
+.jobHeader{
+    color:white;
+    background: #1c1c1c; /* Old browsers */
+    background: -moz-linear-gradient(180deg, #454647 24%, #1c1c1c 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #454647 24%,#1c1c1c 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(180deg, #454647 24%,#1c1c1c 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454647', endColorstr='#1c1c1c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jobCont{
+    float:left;
+    font-size:15px;
+    color:white;
+    width:300px;
+    height:250px;
+    margin-top:30px;
+    margin-left:60px;
+    background-color:#454647;
+}
+
+#jobHeaderText{
+    margin-left:30px;
+    margin-top:5px;
+    padding-top:7px;
+}
+
+#jobContHeader{
+    height:40px;
+}
+
+#jobLeft{
+    margin-top:15px;
+    width:150px;
+    height:auto;
+    float:left;
+}
+
+#jobRight{
+    margin-top:15px;
+    width:150px;
+    height:auto;
+    float:right;
+}
+
+.jobsLeftText{
+    text-align:left;
+    padding-left:30px;
+    margin-bottom:25px;
+}
+
+
+.jobsRightText{
+    text-align:right;
+    margin-bottom:25px;
+    padding-right:50px;
+}
+
+#jobsInfoCont{
+    color:white;
+    font-size:14px;
+    margin-left:70px;
+    float:left;
+    width:350px;
+    margin-top:20px;
+}
+
+#jobsInfoLink{
+    text-decoration: underline;
+}

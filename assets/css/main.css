@@ -1,0 +1,75 @@
+﻿body
+{
+    margin-top:0;
+    margin:0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    margin:0 auto;
+}
+
+h1 
+{
+    display:none;
+}
+
+ul
+{
+    text-decoration: none;
+    list-style-type: none;
+    margin:0 auto;
+    height:auto;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
+#PageNotFoundCont{
+    width:100%;
+    height:1300px;
+}
+
+#headerBannerCont
+{
+    position:absolute;
+    pointer-events: none;
+    width:100%;
+    text-align:center;
+    z-index:5;
+}
+
+#headerBanner
+{
+    width:300px;
+    height:auto;
+}
+
+#appStoreIconCont
+{
+    width:100%;
+    height:60px;
+    background-color:#d6fff6;
+    text-align:center;
+}
+
+.appStoreIcons
+{
+    margin-top:10px;
+    width: 115px;
+    height: auto;
+}
+
+.popupBackdrop{
+    position:fixed;
+    background-color:black;
+    width:100%;
+    height:100%;
+    z-index:9;
+    margin-top:-50px;
+    opacity:0.3;
+}
+

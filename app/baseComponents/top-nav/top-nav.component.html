@@ -1,0 +1,24 @@
+﻿<nav>
+	<ul>
+		<li class="topNavText">
+			<a routerLink="/home" routerLinkActive="active">HOME</a>
+		</li>
+		<li class="topNavText">
+			<a routerLink="/jobs" routerLinkActive="active">JOBS</a>
+		</li>
+		<li class="topNavText">
+			<a (click)="openContact()" >CONTACT</a>
+		</li>
+		<li class="topNavText">
+			<a routerLink="/news" routerLinkActive="active">NEWS</a>
+		</li>
+		<li class="topNavText">
+			<a routerLink="/turbosquad" routerLinkActive="active">TURBO SQUAD</a>
+		</li>
+		<li class="topNavText">
+			<a routerLink="/about" routerLinkActive="active">ABOUT US</a>
+		</li>
+	</ul>
+</nav>
+
+<app-contact (hideContact)="hideContact()"  *ngIf="contact"></app-contact>
