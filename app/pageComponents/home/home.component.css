@@ -159,10 +159,10 @@
     height:768px;
     width:100%;
     background: #e0750c; /* Old browsers */
-    background: -moz-linear-gradient(180deg, #e0750c 24%, #623e0b 96%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(180deg, #e0750c 24%,#623e0b 96%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(180deg, #e0750c 24%,#623e0b 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0750c', endColorstr='#623e0b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: -moz-linear-gradient(180deg, #e0750c 24%, #6b4529 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #e0750c 24%,#6b4529 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(180deg, #e0750c 24%,#6b4529 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0750c', endColorstr='#6b4529',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #gameInfoTitle{

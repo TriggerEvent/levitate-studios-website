@@ -1,33 +1,54 @@
-<div class="popupBackdrop" (click)="exitContact()">
-</div>
-<div id="contactCont">
-    <h1>Contact</h1>
+<div class="popupBackdrop" (click)="exitContact()"></div>
 
-    <div id="contact">
+<div [@contactState]="state" id="questionsCont">
+
+    <span class="contactExit" (click)="exitContact()">x</span>
+
+    <div id="questions"  *ngIf="questions">
+        <h1>Frequent Questions</h1>
+        <p class="contactTitle">Frequently Asked Questions:</p>
+        <button id="questionsContactButton" (click)="toggleQuestions()">contact</button>
+        <p class="questionText" (click)="toggleQuestion(2)"><span *ngIf="!question[2]">+</span><span *ngIf="question[2]">-&nbsp;</span> What do I need to play Turbo Squad?</p>
+        <p class="answerText" *ngIf="question[2]">Turbo squad can be played on IOS and Android on recommended devices. The game is designed for both mobile and tablet.</p>
+        <p class="questionText" (click)="toggleQuestion(3)"><span *ngIf="!question[3]">+</span><span *ngIf="question[3]">-&nbsp;</span> Can I download Turbo Squad from your website?</p>
+        <p class="answerText" *ngIf="question[3]">Yes! You can visit the store and download directly to your device.  To visit the store, use any of the links on our home page or click <a class="answerLinkText" href="#">here</a> for android and <a  class="answerLinkText" href="#">here</a> for IOS.</p>
+        <p class="questionText" (click)="toggleQuestion(4)"><span *ngIf="!question[4]">+</span><span *ngIf="question[4]">-&nbsp;</span> Can I delete my game or recover lost progress?</p>
+        <p class="answerText" *ngIf="question[4]">To delete your game you must uninstall Turbo Squad from your device, when re-installed you will be prompted to sync to the cloud or download previous progress.  If you sync, all previous progress will be lost and/or updated. If you download, your last cloud sync will be recovered.</p>
+        <p class="questionText" (click)="toggleQuestion(0)"><span *ngIf="!question[0]">+</span><span *ngIf="question[0]">-&nbsp;</span> Will my progress be saved across all my devices?</p>
+        <p class="answerText" *ngIf="question[0]">If you are logged in and progress has been saved to the cloud, you will be able to sync this progress across your devices.</p>
+        <p class="questionText" (click)="toggleQuestion(1)"><span *ngIf="!question[1]">+</span><span *ngIf="question[1]">-&nbsp;</span> Can I save progress without using the cloud (offline)?</p>
+        <p class="answerText" *ngIf="question[1]">Yes, all data will be stored directly to your phone if you choose to play offline or do not wish to use the cloud.</p>
+    </div>
+    <div id="contact"  *ngIf="!questions">
+        <h1>Contact</h1>
+        <img src="assets/images/contact/back.png" id="contactBack" (click)="toggleQuestions()"/>
         <form>
-            <p class="contactInputText">NAME:*</p>
-            <input class="contactInput" type="text">
-            <p class="contactInputText">EMAIL:*</p>
-            <input class="contactInput" type="text">
-            <p class="contactInputText">DEVICE:</p>
-            <input class="contactInput" type="text">
-            <p class="contactInputText">ISSUE:*</p>
-            <select class="contactSelect">
-                <option value="progress">Lost Progress</option>
-                <option value="payment">Unauthorized Payment</option>
-                <option value="feedback">Feedback and Suggestions</option>
-                <option value="syncing">Syncing</option>
-                <option value="reset">Reset Score</option>
-                <option value="bugs">Bugs</option>
-                <option value="other">Other</option>
-            </select>
-            <p>MESSAGE:*</p>
-            <textarea type="text"></textarea>
-            <input type="checkbox">
-            <p>I agree to the Privacy Policy.</p>
-            <div>recapchca</div>
-            <button type="submit">SUBMIT</button>
+            <div id="contactLeftCont">
+                <p class="contactInputText">NAME:*</p>
+                <input class="contactInput" type="text">
+                <p class="contactInputText">EMAIL:*</p>
+                <input class="contactInput" type="text">
+                <p class="contactInputText">DEVICE:</p>
+                <input class="contactInput" type="text">
+                <p class="contactInputText">ISSUE:*</p>
+                <select class="contactSelect">
+                    <option value="progress">Lost Progress</option>
+                    <option value="payment">Unauthorized Payment</option>
+                    <option value="feedback">Feedback and Suggestions</option>
+                    <option value="syncing">Syncing</option>
+                    <option value="reset">Reset Score</option>
+                    <option value="bugs">Bugs</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="contactRightCont">
+                <p class="contactInputText">MESSAGE:*</p>
+                <textarea class="contactTextArea" type="text"></textarea>
+                <input class="contactCheckbox" type="checkbox">
+                <p class="contactCheckboxText">I agree to the Privacy Policy.</p>
+                <img id="contactRecaptcha" src="assets/images/contact/recaptcha_temp.png" />
+                <button class="contactButton" type="submit">SUBMIT</button>
+            </div>
         </form>
     </div>
-
 </div>

@@ -3,8 +3,158 @@
     left:50%;
     margin-left:-400px;
     width:800px;
-    height:400px;
-    background-color:white;
+    height:500px;
+    background: #333436; /* Old browsers */
+    background: -moz-linear-gradient(180deg, #939393 24%, #7b7b7b 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #939393 24%,#7b7b7b 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(180deg, #939393 24%,#7b7b7b 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939393', endColorstr='#7b7b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border:solid white 1px;
     z-index:10;
     margin-top:100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#contact{
+    color:white;
+}
+
+.contactInput{
+    height:30px;
+    padding-left:10px;
+    width:300px;
+}
+
+.contactSelect{
+    width:315px;
+    height:35px;
+    padding-left:10px;
+}
+
+.contactTextArea{
+    width:330px;
+    height:120px;
+}
+
+.contactInputText{
+    font-weight: 700;
+    font-size:12px;
+}
+
+.contactCheckbox{
+    display:inline-block;
+    width:30px;
+}
+
+.contactCheckboxText{
+    display:inline-block;
+    font-size:12px;
+}
+
+.contactButton{
+    margin-top:10px;
+    width:100px;
+    height:30px;
+    float:right;
+    margin-right:30px;
+}
+
+#questionsCont{
+    position:fixed;
+    left:50%;
+    margin-left:-400px;
+    width:800px;
+    height:400px;
+    background: #1493e4; /* Old browsers */
+    border:solid white 1px;
+    z-index:10;
+    margin-top:100px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#questions{
+    margin-left:30px;
+}
+
+.questionText{
+    font-size:15px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+}
+
+.answerText{
+    color:#4d4d4d;
+    font-size:14px;
+    font-weight:700;
+    height:auto;
+    padding:10px;
+    margin:10px;
+    background-color: white;
+    width:710px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.answerLinkText{
+    color:blue;
+}
+
+.contactExit{
+    position:absolute;
+    left:100%;
+    margin-left:-35px;
+    font-size:30px;
+    font-weight:700;
+    color:white;
+    cursor:pointer;
+}
+.contactTitle{
+    font-size:22px;
+    font-weight:700;
+    color:white;
+    margin-top:30px;
+}
+
+#questionsContactButton{
+    position:absolute;
+    left:50%;
+    height:26px;
+    width:70px;
+    margin-left:-35px;
+    font-size:14px;
+    margin-top:280px;
+}
+
+#contactRightCont{
+    width:360px;
+    height:auto;
+    float:right;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:-20px;
+}
+#contactLeftCont{
+    width:340px;
+    height:auto;
+    float:left;
+    padding-left:20px;
+    margin-left:20px;
+    margin-top:-20px;
+}
+
+#contactRecaptcha{
+    float:right;
+    margin-right:30px;
+}
+
+
+#contactBack{
+    width:50px;
+    height:auto;
 }
