@@ -70,7 +70,7 @@
     background: #1493e4; /* Old browsers */
     border:solid white 1px;
     z-index:10;
-    margin-top:100px;
+    margin-top:150px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -137,7 +137,7 @@
     float:right;
     padding-left:20px;
     padding-right:20px;
-    margin-top:-20px;
+    margin-top:40px;
 }
 #contactLeftCont{
     width:340px;
@@ -145,7 +145,7 @@
     float:left;
     padding-left:20px;
     margin-left:20px;
-    margin-top:-20px;
+    margin-top:40px;
 }
 
 #contactRecaptcha{
@@ -155,6 +155,9 @@
 
 
 #contactBack{
-    width:50px;
+    position:absolute;
+    margin-left:20px;
+    margin-top:10px;
+    width:40px;
     height:auto;
 }

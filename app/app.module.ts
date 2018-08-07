@@ -9,13 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './pageNotFound.component';
 
-import { TopNavComponent } from './baseComponents/top-nav/top-nav.component';
 import { FooterComponent } from './baseComponents/footer/footer.component';
+import { TopNavComponent } from './baseComponents/top-nav/top-nav.component';
+import { DownloadComponent } from './baseComponents/download/download.component';
+
 import { ContactComponent } from './popupComponents/contact/contact.component';
 
 import { HomeComponent } from './pageComponents/home/home.component';
 import { AboutComponent } from './pageComponents/about/about.component';
 import { JobsComponent } from './pageComponents/jobs/jobs.component';
+import { CharactersComponent } from './pageComponents/characters/characters.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'news', component: AboutComponent },
   { path: 'jobs', component: JobsComponent },
+  { path: 'turbosquad', component: CharactersComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
@@ -37,7 +41,9 @@ const appRoutes: Routes = [
     AboutComponent,
     HomeComponent,
     JobsComponent,
-    ContactComponent
+    CharactersComponent,
+    ContactComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

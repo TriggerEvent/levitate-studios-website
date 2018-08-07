@@ -1,0 +1,73 @@
+
+<section id="characterSelect">
+    <h1>Character Select</h1>
+    <img id="characterScoreBot" src="assets/images/characters/scorekeeperBot.png"/>
+    <img id="characterExplosiveBoxes" src="assets/images/characters/explosiveBox.png"/>
+    <div id="characterBackground">
+        <div id="characterStudioIconCont">
+            <img id="characterStudioIcon" src="assets/images/icons/ls_256.png"/>
+        </div>
+
+        <p id="characterHeader">Meet The Squad</p>
+
+        <div *ngIf="character == 0">
+            <img id="characterImage" src="assets/images/characters/character/jett.png"/>
+            <p id="characterName">Jett</p>
+            <p id="characterDescription">Jett description.</p>
+        </div>
+        <div *ngIf="character == 1">
+            <img id="characterImage" src="assets/images/characters/character/vixen.png"/>
+            <p id="characterName" >Vixen</p>
+            <p id="characterDescription">Vixen description.</p>
+        </div>
+        <div *ngIf="character == 2">
+            <img id="characterImage" src="assets/images/characters/character/niles.png"/>
+            <p id="characterName">Niles</p>
+            <p id="characterDescription">Fresh out of the neverglades, Niles enjoys long walks along the waters edge and even longer runs, snatching up anything that catches his eye.</p>
+        </div>
+        <div *ngIf="character == 3">
+            <img id="characterImage" src="assets/images/characters/character/sugar.png"/>
+            <p id="characterName">Sugar</p>
+            <p id="characterDescription">SUgar description.</p>
+        </div>
+        <div *ngIf="character == 4">
+            <img id="characterImage" src="assets/images/characters/character/purscilla.png"/>
+            <p id="characterName">Purscilla</p>
+            <p id="characterDescription">Purscilla description.</p>
+        </div>
+        <div *ngIf="character == 5">
+            <img id="characterImage" src="assets/images/characters/character/reggie.png"/>
+            <p id="characterName">Reggie</p>
+            <p id="characterDescription">Reggie description.</p>
+        </div>
+    </div>
+</section>
+<section id="characterSelectBarCont">
+    <div id="characterSelectBar">
+        <div id="characterBoxesCont">
+            <img *ngIf="prevIcon" src="assets/images/characters/characterBoxes/back.png" id="characterBack" (click)="prev()"/>
+
+            <img src="assets/images/characters/characterBoxes/{{boxes[0]}}" class="characterBox" (click)="changeBoxValues(0)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[1]}}" class="characterBox" (click)="changeBoxValues(1)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[2]}}" class="characterBox" (click)="changeBoxValues(2)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[3]}}" class="characterBox" (click)="changeBoxValues(3)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[4]}}" class="characterBox" (click)="changeBoxValues(4)"/>
+
+            <img *ngIf="nextIcon" src="assets/images/characters/characterBoxes/next.png" id="characterNext" (click)="next()"/>
+        </div>
+    </div>
+</section>
+<app-download></app-download>
+<section id="drawingPagesCont">
+    <h1>Drawing</h1>
+    <div id="drawingPages">
+        <p id="drawingHeader">Look out for our destructive enemies scattered thoughout the galaxy.  There’s one thing you can be certain of, when there is conflict Bitzy and her minions will be to blame.</p>
+        <img id="drawingMainImage" src="assets/images/characters/drawingMainImage.png" />
+        <p id="drawingTitle">Drawing Pages:</p>
+        <div id="drawingBoxes">
+            <div class="drawingBox"></div>
+            <div class="drawingBox"></div>
+            <div class="drawingBox"></div>
+        </div>
+    </div>
+</section>

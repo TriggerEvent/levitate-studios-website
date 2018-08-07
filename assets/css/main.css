@@ -48,21 +48,6 @@ a {
     height:auto;
 }
 
-#appStoreIconCont
-{
-    width:100%;
-    height:60px;
-    background-color:#d6fff6;
-    text-align:center;
-}
-
-.appStoreIcons
-{
-    margin-top:10px;
-    width: 115px;
-    height: auto;
-}
-
 .popupBackdrop{
     position:fixed;
     background-color:black;

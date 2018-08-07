@@ -1,0 +1,187 @@
+#characterSelect{
+    background-color:#262626;
+    width:100%;
+    height:550px;
+}
+
+#characterBackground{
+    width:1024px;
+
+    margin:0 auto;
+    margin-top:0px;
+    height:516px;
+    background-image:url(../../../assets/images/characters/select_bg.jpg);
+}
+#characterStudioIconCont{
+    width:90px;
+    height:110px;
+    background-color:#3b3b3b;
+}
+
+#characterStudioIcon{
+    width:100px;
+    height:auto;
+    margin-top:10px;  
+    margin-left:-5px;
+}
+
+#characterHeader{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    position:absolute;
+    left:50%;
+    width:182px;
+    height:33px;
+    padding:3px;
+    background-color:#344559;
+    margin-left:-300px;
+    font-size:28px;
+}
+
+#characterName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    position:absolute;
+    left:50%;
+    width:auto;
+    padding-right:3px;
+    height:58px;
+    padding-left:3px;
+    background-color:#344559;
+    margin-left:80px;
+    font-size:50px; 
+}
+
+#characterDescription{
+    color:white;
+    position:absolute;
+    left:50%;
+    width:305px;
+    height:auto;
+    padding:3px;
+
+    background-color:#344559;
+    margin-left:80px;
+    margin-top:120px;
+    font-size:16px;  
+}
+
+#characterImage{
+    position:absolute;
+    left:50%;
+    width:165px;
+    margin-left:-100px;
+    margin-top:-50px;
+    height:auto;
+}
+
+#characterScoreBot{
+    position:absolute;
+    width:300px;
+    height:auto;
+    left:50px;
+    margin-top:125px;
+}
+
+#characterExplosiveBoxes{
+    position:absolute;
+    width:300px;
+    height:auto;
+    right:0;
+    margin-right:50px;
+    margin-top:125px;
+}
+
+#characterSelectBar{
+    width:100%;
+    height:140px;
+    background-color:#0073c5;
+}
+
+.characterBox{
+    width:100px;
+    height:auto;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#characterBack{
+    margin-bottom:40px;
+    width:30px;
+    height:auto;
+    cursor:pointer;
+}
+
+#characterNext{
+    margin-bottom:40px;
+    width:30px;
+    height:auto;
+    cursor:pointer;
+}
+
+#characterBoxesCont{
+    margin:0 auto;
+    width:1024px;
+    text-align:center;
+}
+
+#drawingPagesCont{
+    width:100%;
+    height:800px;
+    background: #00b8f3; /* Old browsers */
+    background: -moz-linear-gradient(top, #00b8f3 0%, #1ac4f3 26%, #72dbd9 53%, #bbedab 76%, #fdff18 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00b8f3 0%,#1ac4f3 26%,#72dbd9 53%,#bbedab 76%,#fdff18 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00b8f3 0%,#1ac4f3 26%,#72dbd9 53%,#bbedab 76%,#fdff18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b8f3', endColorstr='#fdff18',GradientType=0 ); /* IE6-9 */
+}
+
+#drawingPages{
+    margin:0 auto;
+    width:1024px;
+    height:auto;
+    text-align:center;
+}
+
+
+#drawingMainImage{
+    width:1024px;
+    height:auto;
+}
+
+#drawingHeader{
+    padding-top:40px;
+    padding-bottom:30px;
+    margin:0 auto;
+    width:800px;
+    height:30px;
+    color:white;
+    font-weight:700;
+}
+
+#drawingBoxes{
+    margin:0 auto;
+    margin-top:-30px;
+    width:800px;
+    height:100px;
+}
+
+.drawingBox{
+    display:inline-block;
+    margin-top:30px;
+    width:180px;
+    height:220px;
+    background-color:white;
+    margin-left:20px;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+#drawingTitle{
+    text-align:left;
+    color:white;
+    font-size:30px;
+    margin-left:200px;
+    margin-top:-10px;
+}
