@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { PagesService } from '../../pageComponents/pages.service';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,14 +9,27 @@ import {Router} from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
   constructor(private pagesService: PagesService, private router: Router) { }
 
+
+  public innerWidth: any;
 
   changeCharacter(num)
   {
     this.pagesService.setCharacter(num);
     this.router.navigateByUrl('/turbosquad');
-    console.log('changeCharacter');
+  }
+
+  @HostListener('window:resize', ['$event'])
+  ngOnInit() 
+  {
+    this.innerWidth = window.innerWidth;
+  }
+
+  onResize(event) 
+  {
+    this.innerWidth = window.innerWidth;
   }
 }

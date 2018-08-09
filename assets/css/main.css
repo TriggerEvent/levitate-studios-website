@@ -69,6 +69,10 @@ a {
 }
 
 /* low res tablets + mobile devices */
-@media (min-width: 320px) and (max-width: 767px) {
-  
+@media (max-width: 767px) {
+    #headerBanner
+    {
+        width:250px;
+        height:auto;
+    }
 }

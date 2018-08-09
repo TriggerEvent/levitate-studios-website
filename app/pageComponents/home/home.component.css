@@ -1,5 +1,3 @@
-
-
 #levitateIcon{
     margin-top:2px;
     margin-left:60px;
@@ -15,7 +13,6 @@
     background-color:#1493e4;
 }
 
-
 #headerBarWhite
 {
     margin-top:0;
@@ -28,7 +25,6 @@
 
 #homeCharacters
 {
-
     width:100%;
     height:500px;
     background-color:#0035dd;
@@ -41,7 +37,7 @@
 .character
 {
     display:inline-block;
-    width:170px;
+    width:167px;
     height:500px;
     background: #feeb00; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #feeb00 0%, #f9c000 26%, #f84300 55%, #494949 96%); /* FF3.6-15 */
@@ -76,7 +72,7 @@
 .characterSelected
 {
     display:inline-block;
-    width:170px;
+    width:167px;
     height:500px;
     background: #feeb00; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #feeb00 0%, #f9c000 26%, #f84300 55%); /* FF3.6-15 */
@@ -198,15 +194,55 @@
 
 /* for under 1366 resolution */
 @media only screen and (max-width: 1365px) and (min-width: 1025px) {
+    #gameInfoImg{
+        width:1024px;
+    }
 
+    #gameInfoCont{
+        height:680px;
+    }
 }
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #gameInfoImg{
+        width:100%;
+    }
 
+    #gameInfoCont{
+        height:auto;
+        padding-bottom:40px;
+    }
+}
+
+@media (max-width:768px){
+    #gameInfoImg{
+        width:100%;
+    }
+    
+    #gameInfoCont{
+        height:auto;
+        padding-bottom:40px;
+    }
 }
 
 /* low res tablets + mobile devices */
-@media (min-width: 320px) and (max-width: 767px) {
-  
+@media (max-width: 350px) {
+
+    .character{
+        width:50%;
+    }
+
+    .characterSelected{
+        width:50%;
+    }
+    
+    .homeCharacter{
+        width:100%;
+    }
+
+    #gameInfoCont{
+        height:auto;
+        padding-bottom:60px;
+    }
 }

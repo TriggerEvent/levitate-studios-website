@@ -4,15 +4,15 @@
         <img id="headerBanner" src="assets/images/ts_banner.png" />
     </div>
     <div id="headerBarBlue">
-        <img src="assets/images/icons/ls_124.png" id="levitateIcon" />
+        <img src="assets/images/icons/ls_124.png" id="levitateIcon"  *ngIf="innerWidth >= 600"/>
     </div>
     <div id="headerBarWhite"></div>
     <div id="homeCharacters">
         <ul id="characterListSelected">	
-            <li class="characterSelected">
+            <li class="characterSelected" *ngIf="innerWidth >= 690 && innerWidth <= 1024">
                 <div class="homeCharacter homeCharacter0"></div>
             </li>
-            <li class="characterSelected">
+            <li class="characterSelected" *ngIf="innerWidth > 690">
                 <div class="homeCharacter homeCharacter1"></div>
             </li>
             <li class="characterSelected">
@@ -21,18 +21,18 @@
             <li class="characterSelected">
                 <div class="homeCharacter homeCharacter3"></div>
             </li>
-            <li class="characterSelected">
+            <li class="characterSelected" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter4"></div>
             </li>
-            <li class="characterSelected">
+            <li class="characterSelected" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter5"></div>
             </li>
         </ul>
         <ul id="characterListDeselected">	
-            <li class="character">
+            <li class="character" *ngIf="innerWidth >= 690 && innerWidth <= 1024">
                 <div class="homeCharacter homeCharacter0" (click)="changeCharacter(4)"></div>
             </li>
-            <li class="character">
+            <li class="character" *ngIf="innerWidth > 690">
                 <div class="homeCharacter homeCharacter1" (click)="changeCharacter(5)"></div>
             </li>
             <li class="character">
@@ -41,10 +41,10 @@
             <li class="character">
                 <div class="homeCharacter homeCharacter3" (click)="changeCharacter(0)"></div>
             </li>
-            <li class="character">
+            <li class="character" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter4" (click)="changeCharacter(3)"></div>
             </li>
-            <li class="character">
+            <li class="character" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter5" (click)="changeCharacter(2)"></div>
             </li>
         </ul>
@@ -55,11 +55,11 @@
     <div id="trailerCont">
         <app-download></app-download>
         <div id="trailerImgCont">
-            <img src="assets/images/home/ship_anim.png"id="trailerImg0" />
-            <img src="assets/images/home/phone-left.png" id="trailerImg1" />
+            <img src="assets/images/home/ship_anim.png"id="trailerImg0" *ngIf="innerWidth >= 1024"/>
+            <img src="assets/images/home/phone-left.png" id="trailerImg1" *ngIf="innerWidth >= 1024"/>
             <div id="trailer">
             </div>
-            <img src="assets/images/home/phone-right.png" id="trailerImg2" />
+            <img src="assets/images/home/phone-right.png" id="trailerImg2" *ngIf="innerWidth >= 1024"/>
         </div>
     </div>
 </section>

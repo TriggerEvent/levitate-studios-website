@@ -9,8 +9,8 @@ footer{
     float:left;
     height:250px;
     width:33.33%;
-
 }
+
 #footerLeftIcon{
     float:left;
     width:250px;
@@ -45,7 +45,6 @@ footer{
     width:400px;
     margin-left:-200px;
     height:250px;
-    
 }
 
 #footerCenterTextLeft{
@@ -74,7 +73,6 @@ footer{
     color:white;
 }
 
-
 #footerRightCont{
     float:right;
     width:33.33%;
@@ -88,6 +86,7 @@ footer{
     padding-top:20px;
     height:230px;
 }
+
 .footerRightNavText{
     margin-top:15px;
 }
@@ -96,23 +95,164 @@ footer{
     margin-top:60px;
 }
 
+.footerSocialIcon{
+    width:45px;
+    height:auto;
+}
 
 /* for under 1366 resolution */
 @media only screen and (max-width: 1365px) and (min-width: 1025px) {
     #footerLeftIcon{
         width:200px;
     }
+
     #footerRightNav{
-        width:300px;
+        width:260px;
     }
 }
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #footerRightNav{
+        width:230px;
+    }
 
+    #footerSocialCont{
+        margin-left:30px; 
+    }
+
+    .footerRightNavText{
+        margin-left:30px;
+    }
+
+    #footerCenterTextLeft {
+        display:block;
+        width:100%;
+        text-align:center;
+        float:unset;
+        margin-left:50px;
+    }
+
+    #footerCenterTextRight {
+        display:block;
+        width:100%;
+        text-align:center;
+        float:unset;
+        margin-left:50px;
+    }
+
+    #footerLeftIcon{
+        width:150px;
+    }
+
+    #footerCenterTextCont{
+        margin-top:-30px;
+    }
+
+    #footerIcon{
+        position:absolute;
+        width:70px;
+        height:70px;
+        margin-left:-150px;
+        margin-top:40px;
+    }
+
+    #footerLeftNavCont{
+        margin-left:80px;
+    }
 }
 
 /* low res tablets + mobile devices */
-@media (min-width: 320px) and (max-width: 767px) {
-  
+@media only screen and (max-width: 767px) {
+    
+    #footerLeftRightCont{
+        width:100%;
+        text-align:center;
+        margin: 0 auto;
+    }
+    
+    #footerRightNav{
+        width:200px;
+        height:150px;
+        margin-top: -70px;
+    }
+
+    #footerRightCont{
+        margin:0 auto;
+        display:inline-block;
+        float:unset;
+        width:200px;
+        height:90px;
+    }
+
+    #footerLeftCont{
+        margin:0 auto;
+        display:inline-block;
+        float:unset;
+        width:200px;
+        height:170px;
+    }
+
+    #footerCenterTextLeft {
+        display:block;
+        width:100%;
+        text-align:center;
+        float:unset;
+        margin-left:50px;
+    }
+
+    #footerCenterTextRight {
+        display:block;
+        width:100%;
+        text-align:center;
+        float:unset;
+        margin-left:50px;
+    }
+
+    #footerLeftIcon{
+        width:150px;
+    }
+
+    #footerCenterTextCont{
+        display:none;
+    }
+
+    #footerIcon{
+        position:absolute;
+        width:70px;
+        height:70px;
+        margin-left:-150px;
+        margin-top:40px;
+    }
+
+    #footerLeftNavCont{
+        margin-left:0px;
+        width:200px;
+    }
+
+    #footerCenter{
+        position:relative;
+        margin:0 auto;
+        width:100%;
+        left:unset;
+        text-align:center;
+        height:150px;
+    }
+
+    footer{
+        height:450px;
+    }
+}
+
+
+/* low res tablets + mobile devices */
+@media only screen and (max-width: 416px) {
+    #footerRightNav{
+        width:200px;
+        height:150px;
+        margin: 0 auto;
+    }
+    footer{
+        height:550px;
+    }
 }
