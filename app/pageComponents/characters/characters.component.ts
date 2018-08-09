@@ -1,4 +1,5 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
+import { PagesService } from '../../pageComponents/pages.service';
 
 @Component({
   selector: 'app-characters',
@@ -7,6 +8,9 @@ import { Component, OnChanges, OnInit } from '@angular/core';
 })
 
 export class CharactersComponent implements OnInit {
+
+  constructor(private pagesService: PagesService) { }
+
   character = 0;
   curBoxValue = 0;
 
@@ -14,7 +18,7 @@ export class CharactersComponent implements OnInit {
   nextIcon = true;
 
   boxes = [];
-  boxValues = [];
+  maxBox = 5;
 
   activeSrc = [];
   deactiveSrc = [];
@@ -39,6 +43,8 @@ export class CharactersComponent implements OnInit {
   
   ngOnInit() 
   {
+    this.character = this.pagesService.getCharacter();
+
     this.activeSrc[0] = "jett1.png";
     this.activeSrc[1] = "vixen.png";
     this.activeSrc[2] = "niles.png";
@@ -60,76 +66,33 @@ export class CharactersComponent implements OnInit {
     this.boxes[4] = this.deactivePurscilla;
     this.boxes[5] = this.deactiveReggie;
 
-    for(let i = 0; i < this.boxes.length; i++)
-      this.boxValues[i] = i;
+    this.changeBoxActive(this.character);
   }
   
-  changeBoxValues(curBoxValue)
+  changeBoxActive(curBoxValue)
   {
-    this.prevIcon = false;
-    this.character = this.boxValues[curBoxValue];
-    this.curBoxValue = curBoxValue;
+    this.character = curBoxValue;
 
     for(let i = 0; i < this.boxes.length; i++)
     {
-      if(this.boxValues[i] == curBoxValue)
+      if(i == curBoxValue)
       {
-        this.boxes[this.boxValues[curBoxValue]] = this.activeSrc[this.boxValues[curBoxValue]];
+        this.boxes[curBoxValue] = this.activeSrc[curBoxValue];
       }
       else
       {
-        this.boxes[this.boxValues[i]] = this.deactiveSrc[this.boxValues[i]];
+        this.boxes[i] = this.deactiveSrc[i];
       }
     }
+  }
+
+  back()
+  {
+    this.maxBox--;
   }
 
   next()
   {
-    if(this.boxValues[0] >= 0)
-    {
-      for(let i = 0; i < this.boxValues.length; i++)
-      this.boxValues[i] = this.boxValues[i] - 1;
-
-      this.refreshIcons();
-    }
-    else
-    {
-      this.nextIcon = false;
-      this.prevIcon = true;
-    }
-
+    this.maxBox++;
   }
-
-  prev()
-  {
-    if(this.boxValues[this.boxValues.length-1] < this.boxValues.length-1)
-    {
-      for(let i = 0; i < this.boxValues.length; i++)
-        this.boxValues[i] = this.boxValues[i] + 1;
-
-      this.refreshIcons();
-    }
-    else
-    {
-      this.nextIcon = true;
-      this.prevIcon = false;
-    }
-  }
-
-  refreshIcons()
-  {
-
-    for(let i = 0; i < this.boxes.length; i++)
-    {
-      if(this.boxValues[i] == this.boxValues[this.curBoxValue])
-      {
-        this.boxes[this.character] = this.activeSrc[i];
-      }
-      else
-      {
-        this.boxes[this.boxValues[i]] = this.deactiveSrc[i];
-      }
-    }
-  }
-
 }

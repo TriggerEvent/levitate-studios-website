@@ -1,4 +1,3 @@
-
 <section id="characterSelect">
     <h1>Character Select</h1>
     <img id="characterScoreBot" src="assets/images/characters/scorekeeperBot.png"/>
@@ -45,15 +44,20 @@
 <section id="characterSelectBarCont">
     <div id="characterSelectBar">
         <div id="characterBoxesCont">
-            <img *ngIf="prevIcon" src="assets/images/characters/characterBoxes/back.png" id="characterBack" (click)="prev()"/>
+            <div id="characterBackCont">
+                <img *ngIf="maxBox >= 6" src="assets/images/characters/characterBoxes/back.png" id="characterBack" (click)="back()"/>
+            </div>
 
-            <img src="assets/images/characters/characterBoxes/{{boxes[0]}}" class="characterBox" (click)="changeBoxValues(0)"/>
-            <img src="assets/images/characters/characterBoxes/{{boxes[1]}}" class="characterBox" (click)="changeBoxValues(1)"/>
-            <img src="assets/images/characters/characterBoxes/{{boxes[2]}}" class="characterBox" (click)="changeBoxValues(2)"/>
-            <img src="assets/images/characters/characterBoxes/{{boxes[3]}}" class="characterBox" (click)="changeBoxValues(3)"/>
-            <img src="assets/images/characters/characterBoxes/{{boxes[4]}}" class="characterBox" (click)="changeBoxValues(4)"/>
+            <img *ngIf="maxBox <= 5" src="assets/images/characters/characterBoxes/{{boxes[0]}}" class="characterBox" (click)="changeBoxActive(0)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[1]}}" class="characterBox" (click)="changeBoxActive(1)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[2]}}" class="characterBox" (click)="changeBoxActive(2)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[3]}}" class="characterBox" (click)="changeBoxActive(3)"/>
+            <img src="assets/images/characters/characterBoxes/{{boxes[4]}}" class="characterBox" (click)="changeBoxActive(4)"/>
+            <img *ngIf="maxBox >= 6" src="assets/images/characters/characterBoxes/{{boxes[5]}}" class="characterBox" (click)="changeBoxActive(5)"/>
 
-            <img *ngIf="nextIcon" src="assets/images/characters/characterBoxes/next.png" id="characterNext" (click)="next()"/>
+            <div id="characterNextCont">
+                <img *ngIf="maxBox <= 5" src="assets/images/characters/characterBoxes/next.png" id="characterNext" (click)="next()"/>
+            </div>
         </div>
     </div>
 </section>

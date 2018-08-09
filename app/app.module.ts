@@ -20,6 +20,8 @@ import { AboutComponent } from './pageComponents/about/about.component';
 import { JobsComponent } from './pageComponents/jobs/jobs.component';
 import { CharactersComponent } from './pageComponents/characters/characters.component';
 
+import { PagesService } from './pageComponents/pages.service';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +31,7 @@ const appRoutes: Routes = [
   { path: 'news', component: AboutComponent },
   { path: 'jobs', component: JobsComponent },
   { path: 'turbosquad', component: CharactersComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -54,7 +56,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [PagesService],
   bootstrap: [AppComponent]
 })
 
