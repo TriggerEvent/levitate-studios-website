@@ -9,7 +9,7 @@
     <div id="headerBarWhite"></div>
     <div id="homeCharacters">
         <ul id="characterListSelected">	
-            <li class="characterSelected" *ngIf="innerWidth >= 690 && innerWidth <= 1024">
+            <li class="characterSelected" *ngIf="innerWidth >= 530">
                 <div class="homeCharacter homeCharacter0"></div>
             </li>
             <li class="characterSelected" *ngIf="innerWidth > 690">
@@ -24,12 +24,12 @@
             <li class="characterSelected" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter4"></div>
             </li>
-            <li class="characterSelected" *ngIf="innerWidth >= 1024">
+            <li class="characterSelected" *ngIf="innerWidth >= 860">
                 <div class="homeCharacter homeCharacter5"></div>
             </li>
         </ul>
         <ul id="characterListDeselected">	
-            <li class="character" *ngIf="innerWidth >= 690 && innerWidth <= 1024">
+            <li class="character" *ngIf="innerWidth >= 530">
                 <div class="homeCharacter homeCharacter0" (click)="changeCharacter(4)"></div>
             </li>
             <li class="character" *ngIf="innerWidth > 690">
@@ -44,7 +44,7 @@
             <li class="character" *ngIf="innerWidth >= 1024">
                 <div class="homeCharacter homeCharacter4" (click)="changeCharacter(3)"></div>
             </li>
-            <li class="character" *ngIf="innerWidth >= 1024">
+            <li class="character" *ngIf="innerWidth >= 860">
                 <div class="homeCharacter homeCharacter5" (click)="changeCharacter(2)"></div>
             </li>
         </ul>

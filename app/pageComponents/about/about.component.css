@@ -32,27 +32,23 @@
 
 #peopleCont{
     position:relative;
+    text-align:center;
     width:100%;
-    height:670px;
+    height:auto;
     background-color:#262626;
-    background-image:url(../../../assets/images/about/chalkboard.jpg);
     background-repeat:no-repeat;
     background-position-x: center;
     background-size: 1366px;
-
 }
 
 #people{
-    text-align: center;
-    position:absolute;
-    background-image:url(../../../assets/images/about/chalk_employees.png);
+    text-align:center;
     background-repeat:no-repeat;
     background-position-x: center;
     background-size: 1366px;
     left:50%;
-    width:1200px;
+    width:1366px;
     height:800px;
-    margin-left: -600px;
 }
 
 #aboutUsImg1{
@@ -62,9 +58,13 @@
 }
 
 #aboutUsTextImg2{
+    position:absolute;
+    left:50%;
+    width:120px;
+    height:auto;
+    margin-left:-60px;
     margin-top:60px;
 }
-
 
 .peopleSelectors{
     position:absolute;
@@ -114,7 +114,6 @@
 {
     font-weight:600;
     font-size:30px;
-    
 }
 
 #newsList{
@@ -129,50 +128,126 @@
     margin-top:10px;
 }
 
+#aboutChalkboard {
+    width:1366px;
+    height:auto;
+}
+
+#aboutEmployees{
+    position:absolute;
+    width:1366px;
+    height:auto;
+}
+
 /* for under 1366 resolution */
 @media only screen and (max-width: 1365px) and (min-width: 1025px) {
+    #aboutUsTextImg2{
+        margin-top:30px;
+    }
+
     #peopleCont{
         width:100%;
-        height:670px;
-        background-size: 1000px;
     }
     
-    #people{
-        background-size: 1024px;
+    #aboutChalkboard {
         width:1024px;
-        height:800px;
-        margin-left: -600px;
+        height:auto;
+    }
+
+    #aboutEmployees{
+        width:1024px;
+        height:auto;
     }
 }
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #peopleCont{
+        position:relative;
+        display:block;
         width:100%;
-        height:670px;
+        height:auto;
         background-size: 100%;
     }
     
     #people{
         background-size: 100%;
         width:100%;
-        height:800px;
         margin-left: -50%;
     }
+
+    #aboutEmployees{
+        width:100%;
+        height:auto;
+    }
+
+    #aboutChalkboard {
+        width:100%;
+        height:auto;
+    }
+
+    #aboutUsTextImg2{
+        margin-top:25px;
+    }
+    
+    #news{
+        left:0;
+        margin-left:0px;
+        width:100%;
+        height:500px;
+
+    }
+    
 }
 
 /* low res tablets + mobile devices */
 @media (max-width: 767px) {
+
+    #news{
+        left:0;
+        margin-left:0px;
+        width:100%;
+        height:500px;
+
+    }
+    #aboutUsTextImg2{
+        margin-top:20px;
+        width:80px;
+        margin-left:-40px;
+    }
+
     #peopleCont{
         width:100%;
-        height:670px;
         background-size: 100%;
     }
     
     #people{
         background-size: 100%;
         width:100%;
-        height:800px;
         margin-left: -50%;
+    }
+    
+    #aboutEmployees{
+        width:100%;
+        height:auto;
+    }
+
+    #aboutChalkboard {
+        width:100%;
+        height:auto;
+    }
+
+    #aboutHeader{
+        width:100%;
+        height:400px;
+    }
+
+    #aboutHeaderBG{
+        width:100%;
+        height:400px;
+    }
+
+    #aboutUsImg1{
+        display:none;
     }
 }
